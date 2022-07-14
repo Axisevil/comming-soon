@@ -15,7 +15,7 @@
          <form action="#" class="form">
             <div class="email-field">
                <input type="email" placeholder="Enter Email Address" required>
-               <button type="submit">Subscribe</button>
+               <button type="submit"onclick="myFunction()" class="btn">Subscribe</button>
             </div>
          </form>
          <div class="count-down">
@@ -71,6 +71,9 @@
          </div>
       </div>
       <script>
+        function myFunction() {
+  alert("Successfully submited")
+}
          const day = document.querySelector(".day .numb");
          const hour = document.querySelector(".hour .numb");
          const min = document.querySelector(".min .numb");
